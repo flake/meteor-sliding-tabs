@@ -1,0 +1,139 @@
+// Custom
+@import 'app-mixins';
+@import 'app-variables';
+
+// Ionic
+@import '../../.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';
+@import '../../.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons';
+
+.ionic-body.platform-android {
+  font-family: "Roboto", sans-serif;
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Roboto", sans-serif;
+  }
+
+  .tab-item {
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+div > a{
+	text-decoration: none;
+	color: #444;
+}
+
+a[role="button"]{
+	cursor:pointer;
+}
+.app-body{
+	background-color: #d2d2d2;
+}
+.app-land{
+	background-color: $positive;
+}
+
+.button.button-positive.button-nav{
+	border-color: transparent;
+	background: none;
+	box-shadow: none;
+	color: #fff;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.button.button-positive.button-txt{
+	border-color: transparent;
+	background: none;
+	box-shadow: none;
+	color: #fff;
+	font-size: 18px;
+}
+
+.nav-icons{
+	position:absolute;
+	top: 5px;
+	right: 36px;
+}
+
+.profile-content.has-tabs{
+	bottom: 0;
+}
+.profile-tabs{
+	position: relative;
+	width: 540px; /* 108px X no of tabs */
+	height: 50px !important;
+	background-color: $positive;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+.profile-tabs > .tab-item{
+	max-width: none;
+	font-weight: bold;
+}
+.tabs-top.tabs-striped.profile-tabs .tab-item.active{
+	border-width: 0 0 3px 0 !important;
+}
+.profile-tabs > .tab-item.active{
+	border-color: #fff;
+}
+.profile-tabs.tabs-top{
+	top: 0;
+}
+.profile-tabs .tabs .tab-item{
+	max-width: none;
+}
+.profile-slide{
+	overflow-y:scroll;
+}
+.user-posts .card{
+	margin: 10px;
+}
+.activity-item .card{
+	margin: 10px 10px 0;
+}
+.activity-item > .item{
+	margin: 0 10px;
+}
+.posts .card{
+	margin: 10px 0;
+}
+.item-owner > img:first-child{
+	width: 27px;
+	height: 27px;
+}
+
+.item-owner{
+	padding-bottom: 0;
+	padding-left: 49px;
+	min-height: 45px;
+}
+.item-owner h4{
+	margin: 0;
+}
+.item-owner p{
+	font-size: 10px;
+	padding: 0;
+	margin: 0;
+	margin-top: -3px;
+}
+.item-body .item-question{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.item.tabs.tabs-secondary.tabs-icon-left.item-actions{
+	padding-left: 16px;
+	height: 36px;
+	line-height: 36px;
+}
+.item-actions .tab-item{
+	text-align: left;
+}
+.item-actions > a{
+	opacity: 1;
+}
+a.subdued{
+	font-size: 11px;
+}

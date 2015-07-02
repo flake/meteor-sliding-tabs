@@ -1,0 +1,78 @@
+<template name="slidingTabs">
+	{{#contentFor "headerButtonLeft"}}
+		{{>ionNavBackButton class="button-nav button-positive" text="Sliding Tabs"}}
+    {{/contentFor}}
+
+    {{#contentFor "headerButtonRight"}}
+      <button class="button button-nav pull-right button-positive" data-ion-menu-toggle="right">
+        <i class="ion-navicon"></i>
+      </button>
+    {{/contentFor}}
+
+    {{#contentFor "headerTitle"}}
+	    <div class="nav-icons">
+	      <button class="button button-nav button-positive" data-action="search">
+	        <i class="ion-android-search"></i>
+	      </button>
+	      <button class="button button-nav button-positive" data-action="notifications">
+	        <i class="ion-android-notifications"></i>
+	      </button>
+	      <button class="button button-nav button-positive" data-action="find-friends">
+	        <i class="ion-person-add"></i>
+	      </button>
+	    </div>
+    {{/contentFor}}
+
+	{{#ionView}}
+	  {{#ionContent class="app-body profile-content"}}
+		{{> _profileTabs}}
+
+		{{#ionSlideBox showPager=false}}
+		
+			{{#ionSlide class="profile-slide"}}
+				{{#each cards}}
+	                {{> sampleCard}}
+	            {{/each}}
+		    {{/ionSlide}}
+
+			{{#ionSlide class="profile-slide"}}
+				{{#each cards}}
+	                {{> sampleCard}}
+	            {{/each}}
+			{{/ionSlide}}
+
+			{{#ionSlide class="profile-slide"}}
+				{{#each cards}}
+	                {{> sampleCard}}
+	            {{/each}}
+			{{/ionSlide}}
+
+			{{#ionSlide class="profile-slide"}}
+				{{#each cards}}
+	                {{> sampleCard}}
+	            {{/each}}
+			{{/ionSlide}}
+
+			{{#ionSlide class="profile-slide"}}
+				{{#each cards}}
+	                {{> sampleCard}}
+	            {{/each}}
+			{{/ionSlide}}
+
+			{{#ionSlide class="profile-slide"}}
+				{{#each cards}}
+	                {{> sampleCard}}
+	            {{/each}}
+			{{/ionSlide}}
+
+			{{#ionSlide class="profile-slide"}}
+				{{#each cards}}
+	                {{> sampleCard}}
+	            {{/each}}
+			{{/ionSlide}}
+		
+		{{/ionSlideBox}}
+		
+	  {{/ionContent}}
+	{{/ionView}}
+</template>
