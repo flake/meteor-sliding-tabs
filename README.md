@@ -1,3 +1,1 @@
-Meteor + Ionic sliding-tabs
-
-Meteoric Sliding Tabs [Demo](http://sliding-tabs.meteor.com)
+Meteor + Ionic sliding-tabs [Demo](http://sliding-tabs.meteor.com)
